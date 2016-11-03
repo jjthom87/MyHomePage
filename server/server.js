@@ -4,7 +4,7 @@ var methodOverride = require('method-override');
 var exphbs = require('express-handlebars');
 
 var app = express();
-var PORT = 8000;
+var PORT = process.env.PORT || 8000;
 
 app.use(bodyParser.urlencoded({ extended: false}));
 app.use(methodOverride('_method'));
