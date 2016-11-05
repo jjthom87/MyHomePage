@@ -166,4 +166,15 @@ $(document).ready(function(){
 		$('#friendFinderButton').show();
 	})
 
+	$('#contactMe').on('submit', function(e){
+		e.preventDefault();
+
+		$.post("/sendemail", {			
+			name: $('#nameInput').val(),
+			email: $('#emailInput').val(),
+			phone: $('#phoneInput').val(),
+			message: $('#messageInput').val()
+		})
+	})
+
 });
