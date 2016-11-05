@@ -14,11 +14,11 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json'}));
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
-app.use('/static', express.static('client'));
-
 app.get('/', function(req,res){
 	res.render('index');
-})
+});
+
+app.use('/static', express.static('client'));
 
 app.listen(PORT, function(){
   console.log("Listening on port", PORT);
