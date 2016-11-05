@@ -1,3 +1,8 @@
+#top {
+    background-color: #a4ff98;
+    margin-top: -25px;
+}
+
 #top-navbar-right {
 	margin-right: 0px;
 }
@@ -22,6 +27,7 @@
 #top-image-text {
     text-decoration: bold;
 	font-family: 'helvetica neue';
+    background-color: #a4ff98;
 }
 
 /*.modal {
@@ -93,7 +99,7 @@
 }
 
 #skills {
-    background-color: #d698ff;
+    background-color: #ebccff;
 }
 
 #sectionBackground {
@@ -127,6 +133,25 @@
 
 #endSectionText {
     width: 300px;
-    text-align: center;
-    margin-left: 75px;
+}
+
+#portfolio {
+    background-color: #a4ff98;
+}
+
+.carouselMenu {
+    margin-top: 250px;
+    font-size: 60px;
+    color: black;
+}
+
+.carouselCaption {
+    color: black;
+    text-decoration: underline;
+    font-size: 24px;
+}
+
+.carouselText {
+    color: black;
+    font-size: 24px;
 }

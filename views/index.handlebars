@@ -1,4 +1,4 @@
-<div class="header navbar navbar-inverse navbar-static-top" id="top">
+<div class="header navbar navbar-inverse navbar-static-top">
     <div class="navbar-header">
     	<h1 class="navbar-left" id="top-navbar-left">Jared Thomas</h1>
     </div>
@@ -17,7 +17,8 @@
 		</ul>
     </div>
 </div>
-<div class="text-center center-block">
+<div class="text-center center-block" id="top">
+	<br>
 	<h1 id="top-image-text" class="text-center">Some People Call Me Jerry</h1>
 	<div>
 		<h10 id="aboveImageText">(click on picture to read my story)</h10>
@@ -69,19 +70,6 @@
 	<div id = "sectionBackground">
 		<h1 id = "sectionTitle" class="text-center">My Skills</h1>
 	</div>
-{{!-- 	    <div class="navbar-collapse collapse">
-			<ul class="nav navbar-nav" id="top-navbar-right">	
-				<li>
-					<a href="#top" class="scrollto">Back to Top</a>
-				</li>
-				<li>
-					<a href="#portfolio" class="scrollto">Portfolio</a>
-				</li>
-				<li>
-					<a href="#contact" class="scrollto">Contact</a>
-				</li>
-			</ul>
-	    </div> --}}
 	<div id = "endSection text-center">
 		<h1 class="text-center" id="endTitle">Front End</h1>
 	</div>
@@ -90,17 +78,17 @@
 		<div class="col-xs-6 col-sm-4 text-center">
 			<a href="https://www.javascript.com/" target="blank"><img src="/static/images/learn-javascript.png" height="100" width="100"/></a>
 			<p id="endTitleText">Javascript</p>
-			<p id="endSectionText">Object-oriented programming language commonly used to create interactive effects within web browsers</p>
+			<p id="endSectionText" class="text-center center-block">Object-oriented programming language commonly used to create interactive effects within web browsers</p>
 		</div>
 		<div class="col-xs-6 col-sm-4 text-center">
 			<a href="http://handlebarsjs.com/" target="blank"><img src="/static/images/handlebars.png" height="100" width="100"/></a>
 			<p id="endTitleText">Express-Handlebars</p>
-			<p id="endSectionText">Framework that organizes web application into MVC and allows for Javascript to be written on the front end</p>
+			<p id="endSectionText" class="text-center center-block">Framework that organizes web application into MVC and allows for Javascript to be written on the front end</p>
 		</div>
 		<div class="col-xs-6 col-sm-4 text-center">
 			<a href="https://facebook.github.io/react/" target="blank"><img src="/static/images/react.png" height="100" width="100"/></a>
 			<p id="endTitleText">React</p>
-			<p id="endSectionText">Open-source JavaScript library providing a view for data rendered as HTML</p>
+			<p id="endSectionText" class="text-center center-block">Open-source JavaScript library providing a view for data rendered as HTML</p>
 		</div>
 	</div>
 	<br>
@@ -112,17 +100,166 @@
 		<div class="col-xs-6 col-sm-4 text-center">
 			<a href="https://nodejs.org/" target="blank"><img src="/static/images/nodejs.png" height="100" width="100"/></a>
 			<p id="endTitleText">Node</p>
-			<p id="endSectionText">Open source command line tool built for server side JavaScript code</p>
+			<p id="endSectionText" class="text-center center-block">Open source command line tool built for server side JavaScript code</p>
 		</div>
 		<div class="col-xs-6 col-sm-4 text-center">
 			<a href="http://expressjs.com/" target="blank"><img src="/static/images/expressjs.png" height="100" width="100"/></a>
 			<p id="endTitleText">Express</p>
-			<p id="endSectionText">Node framework that organizes your web application into an MVC architecture</p>
+			<p id="endSectionText" class="text-center center-block">Node framework that organizes your web application into an MVC architecture</p>
 		</div>
 		<div class="col-xs-6 col-sm-4 text-center">
 			<a href="http://docs.sequelizejs.com/en/v3/" target="blank"><img src="/static/images/sequelize.png" height="100" width="100"/></a>
 			<p id="endTitleText">Sequelize</p>
-			<p id="endSectionText">An easy-to-use multi SQL dialect ORM (Object-Relational Mapping) for Node.js</p>
+			<p id="endSectionText" class="text-center center-block">An easy-to-use multi SQL dialect ORM (Object-Relational Mapping) for Node.js</p>
 		</div>
+	</div>
+	<div class="text-center center-block">
+		<div>
+			<h6 id="belowPictureText">Click Down for My Portfolio</h6>
+		</div>
+		<div>
+			<a href="#portfolio"><span class="glyphicon glyphicon-arrow-down" id="belowPictureDownArrow" href="#portfolio"></span></a>
+		</div>
+	</div>
+</div>
+<div id="portfolio">
+	<br>
+	<div id = "sectionBackground">
+		<h1 id = "sectionTitle" class="text-center">My Portfolio</h1>
+	</div>
+	<br>
+	<div class = "row">
+		<div class="col-xs-6 col-sm-4 text-center">
+			<p id="endTitleText">Bubo</p>
+			<p id="endSectionText" class="text-center center-block">Task recording and tracking application created with React and MySQL</p>
+			<button type="button" class="btn btn-default" id="buboButton">View App</button>
+			<button class="btn btn-danger" id="closeBuboCarousel">Close</button>
+		</div>
+		<div class="col-xs-6 col-sm-4 text-center">
+			<p id="endTitleText">JobTroll</p>
+			<p id="endSectionText" class="text-center center-block">Job Application recording and tracking application created with Express-Handlebars and MySQL</p>
+			<button type="button" class="btn btn-default" id="jobTrollButton">View App</button>
+			<button class="btn btn-danger" id="closeTrollCarousel">Close</button>
+		</div>
+		<div class="col-xs-6 col-sm-4 text-center">
+			<p id="endTitleText">FriendFinder</p>
+			<p id="endSectionText" class="text-center center-block">Matchmaking Application created with Jquery and Node</p>
+			<button type="button" class="btn btn-default" id="friendFinderButton">View App</button>
+			<button class="btn btn-danger" id="closeFriendCarousel">Close</button>
+		</div>
+	</div>
+	<div class="center-block text-center carousel slide" id="buboCarousel">
+		<ol class="carousel-indicators">
+			<li class="item1 active"></li>
+			<li class="item2"></li>
+			<li class="item3"></li>
+		</ol>
+		<div class = "carousel-inner" role="listbox" id="carousel1">
+			<div class="item active center-block text-center">
+				<img class="center-block text-center" id="buboImage1" src='/static/images/bubo1.png' height="1000" width="1000" />
+				<div class = "carousel-caption">
+					<h3 class="carouselCaption">Bubo Home/Feed Page</h3>
+					<p class="carouselText">On this page, you see the most recent activity on the website</p>
+				</div>
+			</div>
+			<div class="item center-block text-center">
+				<img class="center-block text-center" id="buboImage2" src='/static/images/bubo2.png' height="1000" width="1000"/>
+				<div class = "carousel-caption">
+					<h3 class="carouselCaption">Create Quest Page</h3>
+					<p class="carouselText">On this page, you are able to create a quest/long term goal</p>
+				</div>
+			</div>
+			<div class="item center-block text-center">
+				<img class="center-block text-center" id="buboImage3" src='/static/images/bubo3.png' height="1000" width="1000"/>
+				<div class = "carousel-caption">
+					<h3 class="carouselCaption">Profile Page</h3>
+					<p class="carouselText">User's Profile Page</p>
+				</div>
+			</div>
+		</div>
+		<a class="left carousel-control" href="#buboCarousel" role="button">
+			<span class="glyphicon glyphicon-menu-left carouselMenu"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#buboCarousel" role="button">
+			<span class="glyphicon glyphicon-menu-right carouselMenu"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	<div class="center-block text-center carousel slide" id="jobTrollCarousel">
+		<ol class="carousel-indicators">
+			<li class="item1 active"></li>
+			<li class="item2"></li>
+			<li class="item3"></li>
+		</ol>
+		<div class = "carousel-inner" role="listbox" id="carousel1">
+			<div class="item active center-block text-center">
+				<img class="center-block text-center" id="jobTrollImage1" src='/static/images/jobtroll1.png' height="1000" width="1000" />
+				<div class = "carousel-caption">
+					<h3 class="carouselCaption">User's Home Page</h3>
+					<p class="carouselText">View and record job application submissions here</p>
+				</div>
+			</div>
+			<div class="item center-block text-center">
+				<img class="center-block text-center" id="jobTrollImage2" src='/static/images/jobtroll2.png' height="1000" width="1000"/>
+				<div class = "carousel-caption">
+					<h3 class="carouselCaption">Main Page</h3>
+					<p class="carouselText">View our vision here</p>
+				</div>
+			</div>
+			<div class="item center-block text-center">
+				<img class="center-block text-center" id="jobTrollImage3" src='/static/images/jobtroll3.png' height="1000" width="1000"/>
+				<div class = "carousel-caption">
+					<h3 class="carouselCaption">Resources Page</h3>
+					<p class="carouselText">Research on interview tips, tech companies/recruiters, resume/cover letter help</p>
+				</div>
+			</div>
+		</div>
+		<a class="left carousel-control" href="#jobTrollCarousel" role="button">
+			<span class="glyphicon glyphicon-menu-left carouselMenu"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#jobTrollCarousel" role="button">
+			<span class="glyphicon glyphicon-menu-right carouselMenu"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	<div class="center-block text-center carousel slide" id="friendFinderCarousel">
+		<ol class="carousel-indicators">
+			<li class="item1 active"></li>
+			<li class="item2"></li>
+			<li class="item3"></li>
+		</ol>
+		<div class = "carousel-inner" role="listbox" id="carousel1">
+			<div class="item active center-block text-center">
+				<img class="center-block text-center" id="friendImage1" src='/static/images/friend1.png' height="1000" width="1000" />
+				<div class = "carousel-caption">
+					<h3 class="carouselCaption">Home Page</h3>
+					<p class="carouselText">Click on the large yellow button to start your survey</p>
+				</div>
+			</div>
+			<div class="item center-block text-center">
+				<img class="center-block text-center" id="friendImage2" src='/static/images/friend2.png' height="1000" width="1000"/>
+				<div class = "carousel-caption">
+					<h3 class="carouselCaption">Survey Page</h3>
+					<p class="carouselText">Answer the survey accurately here</p>
+				</div>
+			</div>
+			<div class="item center-block text-center">
+				<img class="center-block text-center" id="friendImage3" src='/static/images/friend3.png' height="1000" width="1000"/>
+				<div class = "carousel-caption">
+					<h3 class="carouselCaption">Match Page</h3>
+					<p class="carouselText">See who your match is based on your survey selections</p>
+				</div>
+			</div>
+		</div>
+		<a class="left carousel-control" href="#friendFinderCarousel" role="button">
+			<span class="glyphicon glyphicon-menu-left carouselMenu"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#friendFinderCarousel" role="button">
+			<span class="glyphicon glyphicon-menu-right carouselMenu"></span>
+			<span class="sr-only">Next</span>
+		</a>
 	</div>
 </div>

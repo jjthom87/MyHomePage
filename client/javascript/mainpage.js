@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	//about me section for modal when you click on my picture
+	//---------------------------------------------------------------------------------------------------------------------------
 	$('#top-image').on('click', function(e){
 		e.preventDefault();
 		$('#aboutMeModal').modal();
@@ -45,7 +47,6 @@ $(document).ready(function(){
 			$('.modal-body').append(createStory(storyNumber));
 		}
 
-
 		displayStory();
 
 		$('#rightAboutButton').on('click', function(){
@@ -54,12 +55,115 @@ $(document).ready(function(){
 		});
 
 		$('#leftAboutButton').on('click', function(){
-			if (storyNumber === 2){
-				$('#rightAboutButton').hide();
-			}
 			storyNumber--;
 			displayStory();
 		});
-
 	});
+
+	$('#buboCarousel').hide();
+	$('#jobTrollCarousel').hide();
+	$('#friendFinderCarousel').hide();
+	$('#closeBuboCarousel').hide();
+	$('#closeTrollCarousel').hide();
+	$('#closeFriendCarousel').hide();
+
+	$('#buboButton').on('click', function(){
+		$('#buboButton').hide();
+		$('#closeBuboCarousel').show();
+
+		$('#buboCarousel').show();
+
+		$('#jobTrollCarousel').hide();
+		$('#friendFinderCarousel').hide();
+
+		$('#buboCarousel').carousel();
+		$('.item1').click(function(){
+			$('#buboCarousel').carousel(1);
+		});
+		$('.item2').click(function(){
+			$('#buboCarousel').carousel(2);
+		});
+		$('.item3').click(function(){
+			$('#buboCarousel').carousel(3);
+		});
+		$('.right').click(function(){
+			$('#buboCarousel').carousel('prev');
+		});
+		$('.left').click(function(){
+			$('#buboCarousel').carousel('next');
+		});
+	});
+
+	$('#closeBuboCarousel').on('click', function(){
+		$('#closeBuboCarousel').hide();
+		$('#buboCarousel').hide();
+		$('#buboButton').show();
+	});
+
+	$('#jobTrollButton').on('click', function(){
+		$('#jobTrollButton').hide();
+		$('#closeTrollCarousel').show();
+
+		$('#jobTrollCarousel').show();
+
+		$('#buboCarousel').hide();
+		$('#friendFinderCarousel').hide();
+
+		$('#jobTrollCarousel').carousel();
+		$('.item1').click(function(){
+			$('#jobTrollCarousel').carousel(1);
+		});
+		$('.item2').click(function(){
+			$('#jobTrollCarousel').carousel(2);
+		});
+		$('.item3').click(function(){
+			$('#jobTrollCarousel').carousel(3);
+		});
+		$('.right').click(function(){
+			$('#jobTrollCarousel').carousel('prev');
+		});
+		$('.left').click(function(){
+			$('#jobTrollCarousel').carousel('next');
+		});
+	});
+
+	$('#closeTrollCarousel').on('click', function(){
+		$('#closeTrollCarousel').hide();
+		$('#jobTrollCarousel').hide();
+		$('#jobTrollButton').show();
+	})
+
+	$('#friendFinderButton').on('click', function(){
+		$('#friendFinderButton').hide();
+		$('#closeFriendCarousel').show();
+
+		$('#friendFinderCarousel').show();
+
+		$('#buboCarousel').hide();
+		$('#jobTrollCarousel').hide();
+
+		$('#friendFinderCarousel').carousel();
+		$('.item1').click(function(){
+			$('#friendFinderCarousel').carousel(1);
+		});
+		$('.item2').click(function(){
+			$('#friendFinderCarousel').carousel(2);
+		});
+		$('.item3').click(function(){
+			$('#friendFinderCarousel').carousel(3);
+		});
+		$('.right').click(function(){
+			$('#friendFinderCarousel').carousel('prev');
+		});
+		$('.left').click(function(){
+			$('#friendFinderCarousel').carousel('next');
+		});
+	});
+
+	$('#closeFriendCarousel').on('click', function(){
+		$('#closeFriendCarousel').hide();
+		$('#friendFinderCarousel').hide();
+		$('#friendFinderButton').show();
+	})
+
 });
