@@ -17,11 +17,15 @@ $(document).ready(function(){
 					id: 'story'
 				});
 
-				var storyHeadersP = $('<p>');
+				var storyHeadersP = $('<p>', {
+					id: 'storyHeaderText'
+				});
 				storyHeadersP.append(storyHeaders[index]);
 				storyDiv.append(storyHeadersP);
 
-				var storyP = $('<p>');
+				var storyP = $('<p>', {
+					id: 'storyText'
+				});
 				storyP.append(storyArray[index]);
 				storyDiv.append(storyP);
 
@@ -30,7 +34,14 @@ $(document).ready(function(){
 
 		function displayStory(){
 			$('#story').remove();
-			console.log(storyNumber);
+			if (storyNumber == 0){
+				$('#leftAboutButton').hide();
+			} else if (storyNumber == 2){
+				$('#rightAboutButton').hide();
+			} else {
+				$('#leftAboutButton').show();
+				$('#rightAboutButton').show();
+			}
 			$('.modal-body').append(createStory(storyNumber));
 		}
 
