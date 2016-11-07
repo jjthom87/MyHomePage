@@ -225,7 +225,7 @@ html,body{
     
 }
 
-@media (max-width:230px){
+@media screen and (max-width: 230px){
     #top-nav {
         text-align: center
     }
