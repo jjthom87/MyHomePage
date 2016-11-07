@@ -1,3 +1,4 @@
+{{!top navbar}}
 <div class="header navbar navbar-inverse navbar-static-top">
     <div class="navbar-header">
     	<h1 class="navbar-left" id="top-navbar-left">Jared Thomas</h1>
@@ -17,6 +18,7 @@
 		</ul>
     </div>
 </div>
+{{!top section}}
 <div class="text-center center-block" id="top">
 	<br>
 	<h1 id="top-image-text" class="text-center">Some People Call Me Jerry</h1>
@@ -37,6 +39,7 @@
 		<a href="#skills"><span class="glyphicon glyphicon-arrow-down" id="belowPictureDownArrow" href="#skills"></span></a>
 	</div>
 </div>
+{{!setting up modal in top section}}
 <div id = "aboutMeModal" class="modal fade" role="dialog">
 	<div class="modal-dialog">
 	  <div class = "modal-content">
@@ -65,6 +68,7 @@
 	  </div>
 	</div>
 </div>
+{{!skills section}}
 <div id="skills">
 	<br>
 	<div id = "sectionBackground">
@@ -122,6 +126,7 @@
 		</div>
 	</div>
 </div>
+{{!portfolio section}}
 <div id="portfolio">
 	<br>
 	<div id = "sectionBackground">
@@ -148,6 +153,7 @@
 			<button class="btn btn-danger" id="closeFriendCarousel">Close</button>
 		</div>
 	</div>
+	{{!setting up carousel for portfolio section}}
 	<div class="center-block text-center carousel slide" id="buboCarousel">
 		<ol class="carousel-indicators">
 			<li class="item1 active"></li>
@@ -271,6 +277,7 @@
 		</div>
 	</div>
 </div>
+{{!contact section}}
 <div id="contact">
 	<br>
 	<br>
@@ -303,7 +310,44 @@
 			            <button type="submit" id="contactSubmitButton" class="btn btn-info btn-lg">Send</button>
 			        </div>
 			    </div>
+			    <div>
+			    	<p id="messageSentText"></p>
+			    </div>
 			</form>
+			<div class = "text-center center-block">
+				<div class="text-center">
+					<h1 class="contactMeText">Follow Me on Social Media</h1>
+				</div>
+				<a href="http://stackoverflow.com/users/6689209/jared-thomas" data-toggle="tooltip" title="Follow me on Stack Overflow"><i class="fa fa-fw fa-stack-overflow"></i></a>
+				<a href="https://github.com/jjthom87" data-toggle="tooltip" title="Follow me on Github"><i class="fa fa-fw fa-github"></i></a>
+				<a href="https://www.linkedin.com/in/jared-thomas-a7873732" data-toggle="tooltip" title="Follow me on LinkedIn"><i class="fa fa-fw fa-linkedin"></i></a>
+			</div>
 		</div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+{{!bottom navbar}}
+<div class="navbar navbar-inverse navbar-fixed-bottom">
+	<div class="container-fluid">
+		<div class="navbar-header">
+	    	<h1 class="navbar-left" id="top-navbar-left">Jared Thomas</h1>
+	    </div>
+		<ul class="nav navbar-nav navbar-right" id="top-navbar-right">
+			<li>
+				<a class="scrollto" href="#top">Back to Top</a>
+			</li>
+			<li>
+				<a class="scrollto" href="#skills">Services</a>
+			</li>
+			<li>
+				<a class="scrollto" href="#portfolio">Portfolio</a>
+			</li>
+			<li>
+				<a class="scrollto" href="#contact">Contact</a>
+			</li>
+		</ul>
 	</div>
 </div>

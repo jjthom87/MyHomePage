@@ -59,7 +59,8 @@ $(document).ready(function(){
 			displayStory();
 		});
 	});
-
+	//-------------------------------------------------------------------------------------------------------------------------------------------
+	//creating bootstrap carousel to display my portfolio
 	$('#buboCarousel').hide();
 	$('#jobTrollCarousel').hide();
 	$('#friendFinderCarousel').hide();
@@ -165,6 +166,8 @@ $(document).ready(function(){
 		$('#friendFinderCarousel').hide();
 		$('#friendFinderButton').show();
 	})
+	//----------------------------------------------------------------------------------------------------------------------------
+	//setting up contact me form
 
 	$('#contactMe').on('submit', function(e){
 		e.preventDefault();
@@ -184,7 +187,7 @@ $(document).ready(function(){
 			}
 		}).then((response) => response.json())
 			.then((results) => {
-				console.log(results)
+				$('#messageSentText').text('Message Sent').fadeIn(2000).fadeOut(2000);
 		})
 
 		$('#nameInput').val('');
