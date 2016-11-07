@@ -169,12 +169,27 @@ $(document).ready(function(){
 	$('#contactMe').on('submit', function(e){
 		e.preventDefault();
 
-		$.post("/sendemail", {			
-			name: $('#nameInput').val(),
-			email: $('#emailInput').val(),
-			phone: $('#phoneInput').val(),
-			message: $('#messageInput').val()
+		var data = {
+		}
+
+		fetch("/sendemail", {
+			method: "post",
+			body: JSON.stringify({
+				name: $('#nameInput').val(),
+				email: $('#emailInput').val(),
+				message: $('#messageInput').val()
+			}),
+			headers: {
+				'content-type': 'application/json'
+			}
+		}).then((response) => response.json())
+			.then((results) => {
+				console.log(results)
 		})
-	})
+
+		$('#nameInput').val('');
+		$('#emailInput').val('');
+		$('#messageInput').val('');
+	});
 
 });

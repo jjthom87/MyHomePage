@@ -131,6 +131,10 @@
     font-family: 'Coiny', cursive;
 }
 
+.endTitleClass:hover {
+    background-color: red;
+}
+
 #endSectionText {
     width: 300px;
 }
@@ -158,4 +162,22 @@
 
 #contact {
     background-color: #ebccff;
+}
+
+#contactSubmitButton {
+    margin-top: 10px;
+}
+
+.well {
+    background-color: #ffd670;
+}
+
+.contactMeText {
+    color: #9c45ff;
+    font-family: 'David Libre', serif;
+}
+
+.labelText {
+    margin-top: 10px;
+    font-size: 18px;
 }

@@ -3,14 +3,15 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var nodemailer = require('nodemailer');
 var exphbs = require('express-handlebars');
+var password = require('./password.js')
 
 var app = express();
 var PORT = process.env.PORT || 8000;
 
-app.use(bodyParser.urlencoded({ extended: false}));
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(methodOverride('_method'));
 app.use(bodyParser.text());
-app.use(bodyParser.json({ type: 'application/vnd.api+json'}));
+app.use(bodyParser.json());
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
@@ -24,23 +25,21 @@ app.post('/sendemail', function(req, res){
 		service: 'Gmail',
 		auth: {
 			user: 'cpsjtho@gmail.com',
-			pass: 'Billabong'
+			pass: password
 			}
 	});
 	var mailOptions = {
-	    from: req.body.name + " at email: " + req.body.email + " and phone: " + req.body.phone, // sender address
+	    from: 'user@jaredspage.com',
+	    subject: 'Mainpage Contact Form',
 	    to: 'cpsjtho@gmail.com',
-	    message: req.body.message,
+	    message: 'Name: ' + req.body.name + '\n' + 'Email: ' + 'req.body.email' + '\n' + 'Message: ' + req.body.message,
 	    html: '<p> ' + req.body.message + ' </p>'
 	};
-
 	transporter.sendMail(mailOptions, function(error, info){
 	    if(error){
-	        return console.log(error);
-	        res.redirect('/');
+	        res.json(error);
 	    }
-	    console.log('Message sent: ' + info.response);
-	    res.redirect('/');
+	    res.json(info);
 	});
 });
 
