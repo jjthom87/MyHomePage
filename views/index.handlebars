@@ -1,9 +1,9 @@
-{{!top navbar}}
-<div class="header navbar navbar-inverse navbar-static-top">
-    <div class="navbar-header">
-    	<h1 class="navbar-left" id="top-navbar-left">Jared Thomas</h1>
-    </div>
-    <div class="navbar-collapse collapse" id="navList">
+</div class="container">
+	{{!top navbar}}
+	<div class="header navbar navbar-inverse navbar-static-top" id="top-nav">
+	    <div class="navbar-header">
+	    	<h1 class="navbar-left" id="top-navbar-left">Jared Thomas</h1>
+	    </div>
 		<ul class="nav navbar-nav navbar-right" id="top-navbar-right">	
 			<li>
 				<a href="#skills" class="scrollto">Skills</a>
@@ -16,336 +16,336 @@
 			</li>
 			<br>
 		</ul>
-    </div>
-</div>
-{{!top section}}
-<div class="text-center center-block" id="top">
-	<br>
-	<h1 id="top-image-text" class="text-center">Some People Call Me Jerry</h1>
-	<div>
-		<h10 id="aboveImageText">(click on picture to read my story)</h10>
 	</div>
-		<img id="top-image" src="/static/images/work2.JPG" height="300" width="400"/>
-	<div>
-		<span class="glyphicon glyphicon-arrow-up" id="belowPictureUpArrow"></span>
-	</div>
-	<div>
-		<h10 id="belowPictureText">That's Me</h10>
-	</div>
-	<div>
-		<h6 id="belowPictureText">Click Down for My Skills</h6>
-	</div>
-	<div>
-		<a href="#skills"><span class="glyphicon glyphicon-arrow-down" id="belowPictureDownArrow" href="#skills"></span></a>
-	</div>
-</div>
-{{!setting up modal in top section}}
-<div id = "aboutMeModal" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-	  <div class = "modal-content">
-	    <div class = "modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title text-center">About Me</h4>
-	    </div>
-	    <div class="row">
-	    	<div class="col-md-2">
-	    	</div>
-	    	<div class="col-md-2">
-	    		<span class="glyphicon glyphicon-menu-left" id="leftAboutButton"></span>
-	    	</div>
-	    	<div class="col-md-4">
-	    		<div class = "modal-body"></div>
-	    	</div>
-	    	<div class="col-md-2">
-	    		<span class="glyphicon glyphicon-menu-right" id="rightAboutButton"></span>
-	    	</div>
-	    	<div class="col-md-2">
-	    	</div>
-	    </div>
-	    <div class = "modal-footer">
-	    	<button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
-	    </div>
-	  </div>
-	</div>
-</div>
-{{!skills section}}
-<div id="skills">
-	<br>
-	<div id = "sectionBackground">
-		<h1 id = "sectionTitle" class="text-center">My Skills</h1>
-	</div>
-	<div id = "endSection text-center">
-		<h1 class="text-center" id="endTitle">Front End</h1>
-	</div>
-	<br>
-	<div class = "row">
-		<div class="col-xs-6 col-sm-4 text-center">
-			<a href="https://www.javascript.com/" target="blank"><img src="/static/images/learn-javascript.png" height="100" width="100"/></a>
-			<p id="endTitleText">Javascript</p>
-			<p id="endSectionText" class="text-center center-block">Object-oriented programming language commonly used to create interactive effects within web browsers</p>
-		</div>
-		<div class="col-xs-6 col-sm-4 text-center">
-			<a href="http://handlebarsjs.com/" target="blank"><img src="/static/images/handlebars.png" height="100" width="100"/></a>
-			<p id="endTitleText">Express-Handlebars</p>
-			<p id="endSectionText" class="text-center center-block">Framework that organizes web application into MVC and allows for Javascript to be written on the front end</p>
-		</div>
-		<div class="col-xs-6 col-sm-4 text-center">
-			<a href="https://facebook.github.io/react/" target="blank"><img src="/static/images/react.png" height="100" width="100"/></a>
-			<p id="endTitleText">React</p>
-			<p id="endSectionText" class="text-center center-block">Open-source JavaScript library providing a view for data rendered as HTML</p>
-		</div>
-	</div>
-	<br>
-	<div id = "endSection text-center">
-		<h1 class="text-center" id="endTitle">Back End</h1>
-	</div>
-	<br>
-	<div class = "row">
-		<div class="col-xs-6 col-sm-4 text-center">
-			<a href="https://nodejs.org/" target="blank"><img src="/static/images/nodejs.png" height="100" width="100"/></a>
-			<p id="endTitleText">Node</p>
-			<p id="endSectionText" class="text-center center-block">Open source command line tool built for server side JavaScript code</p>
-		</div>
-		<div class="col-xs-6 col-sm-4 text-center">
-			<a href="http://expressjs.com/" target="blank"><img src="/static/images/expressjs.png" height="100" width="100"/></a>
-			<p id="endTitleText">Express</p>
-			<p id="endSectionText" class="text-center center-block">Node framework that organizes your web application into an MVC architecture</p>
-		</div>
-		<div class="col-xs-6 col-sm-4 text-center">
-			<a href="http://docs.sequelizejs.com/en/v3/" target="blank"><img src="/static/images/sequelize.png" height="100" width="100"/></a>
-			<p id="endTitleText">Sequelize</p>
-			<p id="endSectionText" class="text-center center-block">An easy-to-use multi SQL dialect ORM (Object-Relational Mapping) for Node.js</p>
-		</div>
-	</div>
-	<div class="text-center center-block">
+	{{!top section}}
+	<div class="text-center center-block" id="top">
+		<br>
+		<h1 id="top-image-text" class="text-center">Some People Call Me Jerry</h1>
 		<div>
-			<h6 id="belowPictureText">Click Down for My Portfolio</h6>
+			<h10 id="aboveImageText">(click on picture to read my story)</h10>
+		</div>
+			<img id="top-image" src="/static/images/work2.JPG" height="300" width="400"/>
+		<div>
+			<span class="glyphicon glyphicon-arrow-up" id="belowPictureUpArrow"></span>
 		</div>
 		<div>
-			<a href="#portfolio"><span class="glyphicon glyphicon-arrow-down" id="belowPictureDownArrow" href="#portfolio"></span></a>
-		</div>
-	</div>
-</div>
-{{!portfolio section}}
-<div id="portfolio">
-	<br>
-	<div id = "sectionBackground">
-		<h1 id = "sectionTitle" class="text-center">My Portfolio</h1>
-	</div>
-	<br>
-	<div class = "row">
-		<div class="col-xs-6 col-sm-4 text-center">
-			<p id="endTitleText"><a href="https://github.com/jjthom87/QuestGroupProject" target="blank" class="endTitleLink">Bubo</a></p>
-			<p id="endSectionText" class="text-center center-block">Task recording and tracking application created with React and MySQL</p>
-			<button type="button" class="btn btn-default" id="buboButton">View App</button>
-			<button class="btn btn-danger" id="closeBuboCarousel">Close</button>
-		</div>
-		<div class="col-xs-6 col-sm-4 text-center">
-			<p id="endTitleText"><a href="https://github.com/jrizza88/JobTroll" target="blank" class="endTitleLink">JobTroll</a></p>
-			<p id="endSectionText" class="text-center center-block">Job Application recording and tracking application created with Express-Handlebars and MySQL</p>
-			<button type="button" class="btn btn-default" id="jobTrollButton">View App</button>
-			<button class="btn btn-danger" id="closeTrollCarousel">Close</button>
-		</div>
-		<div class="col-xs-6 col-sm-4 text-center">
-			<p id="endTitleText"><a href="https://github.com/jjthom87/FriendFinder" target="blank" class="endTitleLink">FriendFinder</a></p>
-			<p id="endSectionText" class="text-center center-block">Matchmaking Application created with Jquery and Node</p>
-			<button type="button" class="btn btn-default" id="friendFinderButton">View App</button>
-			<button class="btn btn-danger" id="closeFriendCarousel">Close</button>
-		</div>
-	</div>
-	{{!setting up carousel for portfolio section}}
-	<div class="center-block text-center carousel slide" id="buboCarousel">
-		<ol class="carousel-indicators">
-			<li class="item1 active"></li>
-			<li class="item2"></li>
-			<li class="item3"></li>
-		</ol>
-		<div class = "carousel-inner" role="listbox" id="carousel1">
-			<div class="item active center-block text-center">
-				<img class="center-block text-center" id="buboImage1" src='/static/images/bubo1.png' height="1000" width="1000" />
-				<div class = "carousel-caption">
-					<h3 class="carouselCaption">Bubo Home/Feed Page</h3>
-					<p class="carouselText">On this page, you see the most recent activity on the website</p>
-			 	</div>
-			</div>
-			<div class="item center-block text-center">
-				<img class="center-block text-center" id="buboImage2" src='/static/images/bubo2.png' height="1000" width="1000"/>
-				<div class = "carousel-caption">
-					<h3 class="carouselCaption">Create Quest Page</h3>
-					<p class="carouselText">On this page, you are able to create a quest/long term goal</p>
-				</div>
-			</div>
-			<div class="item center-block text-center">
-				<img class="center-block text-center" id="buboImage3" src='/static/images/bubo3.png' height="1000" width="1000"/>
-				<div class = "carousel-caption">
-					<h3 class="carouselCaption">Profile Page</h3>
-					<p class="carouselText">User's Profile Page</p>
-				</div>
-			</div>
-		</div>
-		<a class="left carousel-control" href="#buboCarousel" role="button">
-			<span class="glyphicon glyphicon-menu-left carouselMenu"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="right carousel-control" href="#buboCarousel" role="button">
-			<span class="glyphicon glyphicon-menu-right carouselMenu"></span>
-			<span class="sr-only">Next</span>
-		</a>
-	</div>
-	<div class="center-block text-center carousel slide" id="jobTrollCarousel">
-		<ol class="carousel-indicators">
-			<li class="item1 active"></li>
-			<li class="item2"></li>
-			<li class="item3"></li>
-		</ol>
-		<div class = "carousel-inner" role="listbox" id="carousel1">
-			<div class="item active center-block text-center">
-				<img class="center-block text-center" id="jobTrollImage1" src='/static/images/jobtroll1.png' height="1000" width="1000" />
-				<div class = "carousel-caption">
-					<h3 class="carouselCaption">User's Home Page</h3>
-					<p class="carouselText">View and record job application submissions here</p>
-				</div>
-			</div>
-			<div class="item center-block text-center">
-				<img class="center-block text-center" id="jobTrollImage2" src='/static/images/jobtroll2.png' height="1000" width="1000"/>
-				<div class = "carousel-caption">
-					<h3 class="carouselCaption">Main Page</h3>
-					<p class="carouselText">View our vision here</p>
-				</div>
-			</div>
-			<div class="item center-block text-center">
-				<img class="center-block text-center" id="jobTrollImage3" src='/static/images/jobtroll3.png' height="1000" width="1000"/>
-				<div class = "carousel-caption">
-					<h3 class="carouselCaption">Resources Page</h3>
-					<p class="carouselText">Research on interview tips, tech companies/recruiters, resume/cover letter help</p>
-				</div>
-			</div>
-		</div>
-		<a class="left carousel-control" href="#jobTrollCarousel" role="button">
-			<span class="glyphicon glyphicon-menu-left carouselMenu"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="right carousel-control" href="#jobTrollCarousel" role="button">
-			<span class="glyphicon glyphicon-menu-right carouselMenu"></span>
-			<span class="sr-only">Next</span>
-		</a>
-	</div>
-	<div class="center-block text-center carousel slide" id="friendFinderCarousel">
-		<ol class="carousel-indicators">
-			<li class="item1 active"></li>
-			<li class="item2"></li>
-			<li class="item3"></li>
-		</ol>
-		<div class = "carousel-inner" role="listbox" id="carousel1">
-			<div class="item active center-block text-center">
-				<img class="center-block text-center" id="friendImage1" src='/static/images/friend1.png' height="1000" width="1000" />
-				<div class = "carousel-caption">
-					<h3 class="carouselCaption">Home Page</h3>
-					<p class="carouselText">Click on the large yellow button to start your survey</p>
-				</div>
-			</div>
-			<div class="item center-block text-center">
-				<img class="center-block text-center" id="friendImage2" src='/static/images/friend2.png' height="1000" width="1000"/>
-				<div class = "carousel-caption">
-					<h3 class="carouselCaption">Survey Page</h3>
-					<p class="carouselText">Answer the survey accurately here</p>
-				</div>
-			</div>
-			<div class="item center-block text-center">
-				<img class="center-block text-center" id="friendImage3" src='/static/images/friend3.png' height="1000" width="1000"/>
-				<div class = "carousel-caption">
-					<h3 class="carouselCaption">Match Page</h3>
-					<p class="carouselText">See who your match is based on your survey selections</p>
-				</div>
-			</div>
-		</div>
-		<a class="left carousel-control" href="#friendFinderCarousel" role="button">
-			<span class="glyphicon glyphicon-menu-left carouselMenu"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="right carousel-control" href="#friendFinderCarousel" role="button">
-			<span class="glyphicon glyphicon-menu-right carouselMenu"></span>
-			<span class="sr-only">Next</span>
-		</a>
-	</div>
-	<div class="text-center center-block">
-		<div>
-			<h6 id="belowPictureText">Click Down to Contact Me</h6>
+			<h10 id="belowPictureText">That's Me</h10>
 		</div>
 		<div>
-			<a href="#contact"><span class="glyphicon glyphicon-arrow-down" id="belowPictureDownArrow" href="#portfolio"></span></a>
+			<h6 id="belowPictureText">Click Down for My Skills</h6>
+		</div>
+		<div>
+			<a href="#skills"><span class="glyphicon glyphicon-arrow-down" id="belowPictureDownArrow" href="#skills"></span></a>
 		</div>
 	</div>
-</div>
-{{!contact section}}
-<div id="contact">
-	<br>
-	<br>
-	<div class="row">
-	    <div class="col-md-4 col-md-offset-4 well">
-			<form id="contactMe" enctype="text/plain">
-				<div class="text-center">
-					<h1 class="contactMeText">Contact Me</h1>
+	{{!setting up modal in top section}}
+	<div id = "aboutMeModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+		  <div class = "modal-content">
+		    <div class = "modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title text-center">About Me</h4>
+		    </div>
+		    <div class="row">
+		    	<div class="col-md-2">
+		    	</div>
+		    	<div class="col-md-2 modal-top">
+		    		<span class="glyphicon glyphicon-menu-left" id="leftAboutButton"></span>
+		    	</div>
+		    	<div class="col-md-4">
+		    		<div class = "modal-body"></div>
+		    	</div>
+		    	<div class="col-md-2 modal-bottom">
+		    		<span class="glyphicon glyphicon-menu-right" id="rightAboutButton"></span>
+		    	</div>
+		    	<div class="col-md-2">
+		    	</div>
+		    </div>
+		    <div class = "modal-footer">
+		    	<button type="button" class="btn btn-default center-block bottom-button" data-dismiss="modal">Close</button>
+		    </div>
+		  </div>
+		</div>
+	</div>
+	{{!skills section}}
+	<div id="skills">
+		<br>
+		<div id = "sectionBackground">
+			<h1 id = "sectionTitle" class="text-center">My Skills</h1>
+		</div>
+		<div id = "endSection text-center">
+			<h1 class="text-center" id="endTitle">Front End</h1>
+		</div>
+		<br>
+		<div class = "row feSkills">
+			<div class="col-xs-6 col-sm-4 text-center">
+				<a href="https://www.javascript.com/" target="blank"><img class="skillImage" src="/static/images/learn-javascript.png" height="100" width="100"/></a>
+				<p id="endTitleText">Javascript</p>
+				<p id="endSectionText" class="text-center center-block">Object-oriented programming language commonly used to create interactive effects within web browsers</p>
+			</div>
+			<div class="col-xs-6 col-sm-4 text-center ehSkill">
+				<a href="http://handlebarsjs.com/" target="blank"><img class="skillImage" src="/static/images/handlebars.png" height="100" width="100"/></a>
+				<p id="endTitleText">Express-Handlebars</p>
+				<p id="endSectionText" class="text-center center-block">Framework that organizes web application into MVC and allows for Javascript to be written on the front end</p>
+			</div>
+			<div class="col-xs-6 col-sm-4 text-center">
+				<a href="https://facebook.github.io/react/" target="blank"><img class="skillImage" src="/static/images/react.png" height="100" width="100"/></a>
+				<p id="endTitleText">React</p>
+				<p id="endSectionText" class="text-center center-block">Open-source JavaScript library providing a view for data rendered as HTML</p>
+			</div>
+		</div>
+		<br>
+		<div id = "endSection text-center">
+			<h1 class="text-center" id="endTitle">Back End</h1>
+		</div>
+		<br>
+		<div class = "row">
+			<div class="col-xs-6 col-sm-4 text-center">
+				<a href="https://nodejs.org/" target="blank"><img src="/static/images/nodejs.png" height="100" width="100"/></a>
+				<p id="endTitleText">Node</p>
+				<p id="endSectionText" class="text-center center-block">Open source command line tool built for server side JavaScript code</p>
+			</div>
+			<div class="col-xs-6 col-sm-4 text-center exSkill">
+				<a href="http://expressjs.com/" target="blank"><img src="/static/images/expressjs.png" height="100" width="100"/></a>
+				<p id="endTitleText">Express</p>
+				<p id="endSectionText" class="text-center center-block">Node framework that organizes your web application into an MVC architecture</p>
+			</div>
+			<div class="col-xs-6 col-sm-4 text-center">
+				<a href="http://docs.sequelizejs.com/en/v3/" target="blank"><img src="/static/images/sequelize.png" height="100" width="100"/></a>
+				<p id="endTitleText">Sequelize</p>
+				<p id="endSectionText" class="text-center center-block">An easy-to-use multi SQL dialect ORM (Object-Relational Mapping) for Node.js</p>
+			</div>
+		</div>
+		<div class="text-center center-block">
+			<div>
+				<h6 id="belowPictureText">Click Down for My Portfolio</h6>
+			</div>
+			<div>
+				<a href="#portfolio"><span class="glyphicon glyphicon-arrow-down" id="belowPictureDownArrow" href="#portfolio"></span></a>
+			</div>
+		</div>
+	</div>
+	{{!portfolio section}}
+	<div id="portfolio">
+		<br>
+		<div id = "sectionBackground">
+			<h1 id = "sectionTitle" class="text-center">My Portfolio</h1>
+		</div>
+		<br>
+		<div class = "row port">
+			<div class="col-xs-6 col-sm-4 text-center">
+				<p id="endTitleText"><a href="https://github.com/jjthom87/QuestGroupProject" target="blank" class="endTitleLink">Bubo</a></p>
+				<p id="endSectionText" class="text-center center-block">Task recording and tracking application created with React and MySQL</p>
+				<button type="button" class="btn btn-default" id="buboButton">View App</button>
+				<button class="btn btn-danger" id="closeBuboCarousel">Close</button>
+			</div>
+			<div class="col-xs-6 col-sm-4 text-center jobtroll">
+				<p id="endTitleText"><a href="https://github.com/jrizza88/JobTroll" target="blank" class="endTitleLink">JobTroll</a></p>
+				<p id="endSectionText" class="text-center center-block">Job Application recording and tracking application created with Express-Handlebars and MySQL</p>
+				<button type="button" class="btn btn-default" id="jobTrollButton">View App</button>
+				<button class="btn btn-danger" id="closeTrollCarousel">Close</button>
+			</div>
+			<div class="col-xs-6 col-sm-4 text-center">
+				<p id="endTitleText"><a href="https://github.com/jjthom87/FriendFinder" target="blank" class="endTitleLink">FriendFinder</a></p>
+				<p id="endSectionText" class="text-center center-block">Matchmaking Application created with Jquery and Node</p>
+				<button type="button" class="btn btn-default" id="friendFinderButton">View App</button>
+				<button class="btn btn-danger" id="closeFriendCarousel">Close</button>
+			</div>
+		</div>
+		{{!setting up carousel for portfolio section}}
+		<div class="center-block text-center carousel slide" id="buboCarousel">
+			<ol class="carousel-indicators">
+				<li class="item1 active"></li>
+				<li class="item2"></li>
+				<li class="item3"></li>
+			</ol>
+			<div class = "carousel-inner" role="listbox" id="carousel1">
+				<div class="item active center-block text-center">
+					<img class="center-block text-center" id="buboImage1" src='/static/images/bubo1.png' height="1000" width="1000" />
+					<div class = "carousel-caption">
+						<h3 class="carouselCaption">Bubo Home/Feed Page</h3>
+						<p class="carouselText">On this page, you see the most recent activity on the website</p>
+				 	</div>
 				</div>
-		        <div class="form-group">
-		            <label class="contactMeText labelText">Name</label>
-		            <div class="input-group center-block">
-		            	<input type="text" class="form-control" placeholder="Type Name Here" id="nameInput" required data-validation-required-message="Please enter your name.">
-		            </div>
-		        </div>
-		        <div class="form-group">
-		            <label class="contactMeText labelText">Email Address</label>
-		            <div class="input-group center-block">
-		            	<input type="email" class="form-control" placeholder="Type Email Address Here" id="emailInput" required data-validation-required-message="Please enter your email address.">
-		            </div>
-		        </div>
-			    <div class="form-group">
-		            <label class="contactMeText labelText">Message</label>
-		            <div class="input-group center-block">
-		            	<textarea rows="5" class="form-control" placeholder="Type Message Here" id="messageInput" required data-validation-required-message="Please enter a message."></textarea>
+				<div class="item center-block text-center">
+					<img class="center-block text-center" id="buboImage2" src='/static/images/bubo2.png' height="1000" width="1000"/>
+					<div class = "carousel-caption">
+						<h3 class="carouselCaption">Create Quest Page</h3>
+						<p class="carouselText">On this page, you are able to create a quest/long term goal</p>
+					</div>
+				</div>
+				<div class="item center-block text-center">
+					<img class="center-block text-center" id="buboImage3" src='/static/images/bubo3.png' height="1000" width="1000"/>
+					<div class = "carousel-caption">
+						<h3 class="carouselCaption">Profile Page</h3>
+						<p class="carouselText">User's Profile Page</p>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#buboCarousel" role="button">
+				<span class="glyphicon glyphicon-menu-left carouselMenu"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#buboCarousel" role="button">
+				<span class="glyphicon glyphicon-menu-right carouselMenu"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		<div class="center-block text-center carousel slide" id="jobTrollCarousel">
+			<ol class="carousel-indicators">
+				<li class="item1 active"></li>
+				<li class="item2"></li>
+				<li class="item3"></li>
+			</ol>
+			<div class = "carousel-inner" role="listbox" id="carousel1">
+				<div class="item active center-block text-center">
+					<img class="center-block text-center" id="jobTrollImage1" src='/static/images/jobtroll1.png' height="1000" width="1000" />
+					<div class = "carousel-caption">
+						<h3 class="carouselCaption">User's Home Page</h3>
+						<p class="carouselText">View and record job application submissions here</p>
+					</div>
+				</div>
+				<div class="item center-block text-center">
+					<img class="center-block text-center" id="jobTrollImage2" src='/static/images/jobtroll2.png' height="1000" width="1000"/>
+					<div class = "carousel-caption">
+						<h3 class="carouselCaption">Main Page</h3>
+						<p class="carouselText">View our vision here</p>
+					</div>
+				</div>
+				<div class="item center-block text-center">
+					<img class="center-block text-center" id="jobTrollImage3" src='/static/images/jobtroll3.png' height="1000" width="1000"/>
+					<div class = "carousel-caption">
+						<h3 class="carouselCaption">Resources Page</h3>
+						<p class="carouselText">Research on interview tips, tech companies/recruiters, resume/cover letter help</p>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#jobTrollCarousel" role="button">
+				<span class="glyphicon glyphicon-menu-left carouselMenu"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#jobTrollCarousel" role="button">
+				<span class="glyphicon glyphicon-menu-right carouselMenu"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		<div class="center-block text-center carousel slide" id="friendFinderCarousel">
+			<ol class="carousel-indicators">
+				<li class="item1 active"></li>
+				<li class="item2"></li>
+				<li class="item3"></li>
+			</ol>
+			<div class = "carousel-inner" role="listbox" id="carousel1">
+				<div class="item active center-block text-center">
+					<img class="center-block text-center" id="friendImage1" src='/static/images/friend1.png' height="1000" width="1000" />
+					<div class = "carousel-caption">
+						<h3 class="carouselCaption">Home Page</h3>
+						<p class="carouselText">Click on the large yellow button to start your survey</p>
+					</div>
+				</div>
+				<div class="item center-block text-center">
+					<img class="center-block text-center" id="friendImage2" src='/static/images/friend2.png' height="1000" width="1000"/>
+					<div class = "carousel-caption">
+						<h3 class="carouselCaption">Survey Page</h3>
+						<p class="carouselText">Answer the survey accurately here</p>
+					</div>
+				</div>
+				<div class="item center-block text-center">
+					<img class="center-block text-center" id="friendImage3" src='/static/images/friend3.png' height="1000" width="1000"/>
+					<div class = "carousel-caption">
+						<h3 class="carouselCaption">Match Page</h3>
+						<p class="carouselText">See who your match is based on your survey selections</p>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#friendFinderCarousel" role="button">
+				<span class="glyphicon glyphicon-menu-left carouselMenu"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#friendFinderCarousel" role="button">
+				<span class="glyphicon glyphicon-menu-right carouselMenu"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		<div class="text-center center-block">
+			<div>
+				<h6 id="belowPictureText">Click Down to Contact Me</h6>
+			</div>
+			<div>
+				<a href="#contact"><span class="glyphicon glyphicon-arrow-down" id="belowPictureDownArrow" href="#portfolio"></span></a>
+			</div>
+		</div>
+	</div>
+	{{!contact section}}
+	<div id="contact">
+		<br>
+		<br>
+		<div class="row">
+		    <div class="col-md-4 col-md-offset-4 well">
+				<form id="contactMe" enctype="text/plain">
+					<div class="text-center">
+						<h1 class="contactMeText">Contact Me</h1>
+					</div>
+			        <div class="form-group">
+			            <label class="contactMeText labelText">Name</label>
+			            <div class="input-group center-block">
+			            	<input type="text" class="form-control" placeholder="Type Name Here" id="nameInput" required data-validation-required-message="Please enter your name.">
+			            </div>
 			        </div>
-			    </div>
-			    <div class="form-group">
-			        <div>
-			            <button type="submit" id="contactSubmitButton" class="btn btn-info btn-lg">Send</button>
+			        <div class="form-group">
+			            <label class="contactMeText labelText">Email Address</label>
+			            <div class="input-group center-block">
+			            	<input type="email" class="form-control" placeholder="Type Email Address Here" id="emailInput" required data-validation-required-message="Please enter your email address.">
+			            </div>
 			        </div>
-			    </div>
-			    <div>
-			    	<p id="messageSentText"></p>
-			    </div>
-			</form>
-			<div class = "text-center center-block">
-				<div class="text-center">
-					<h1 class="contactMeText">Follow Me on Social Media</h1>
+				    <div class="form-group">
+			            <label class="contactMeText labelText">Message</label>
+			            <div class="input-group center-block">
+			            	<textarea rows="5" class="form-control" placeholder="Type Message Here" id="messageInput" required data-validation-required-message="Please enter a message."></textarea>
+				        </div>
+				    </div>
+				    <div class="form-group">
+				        <div>
+				            <button type="submit" id="contactSubmitButton" class="btn btn-info btn-lg">Send</button>
+				        </div>
+				    </div>
+				    <div>
+				    	<p id="messageSentText"></p>
+				    </div>
+				</form>
+				<div class = "text-center center-block">
+					<div class="text-center">
+						<h1 class="contactMeText">Follow Me on Social Media</h1>
+					</div>
+					<a href="http://stackoverflow.com/users/6689209/jared-thomas" data-toggle="tooltip" title="Follow me on Stack Overflow"><i class="fa fa-fw fa-stack-overflow"></i></a>
+					<a href="https://github.com/jjthom87" data-toggle="tooltip" title="Follow me on Github"><i class="fa fa-fw fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/jared-thomas-a7873732" data-toggle="tooltip" title="Follow me on LinkedIn"><i class="fa fa-fw fa-linkedin"></i></a>
 				</div>
-				<a href="http://stackoverflow.com/users/6689209/jared-thomas" data-toggle="tooltip" title="Follow me on Stack Overflow"><i class="fa fa-fw fa-stack-overflow"></i></a>
-				<a href="https://github.com/jjthom87" data-toggle="tooltip" title="Follow me on Github"><i class="fa fa-fw fa-github"></i></a>
-				<a href="https://www.linkedin.com/in/jared-thomas-a7873732" data-toggle="tooltip" title="Follow me on LinkedIn"><i class="fa fa-fw fa-linkedin"></i></a>
 			</div>
 		</div>
 	</div>
-</div>
-<br>
-<br>
-{{!bottom navbar}}
-<div class="navbar navbar-inverse navbar-fixed-bottom">
-	<div class="container-fluid">
-		<div class="navbar-header">
-	    	<h1 class="navbar-left" id="top-navbar-left">Jared Thomas</h1>
-	    </div>
-		<ul class="nav navbar-nav navbar-right" id="top-navbar-right">
-			<li>
-				<a class="scrollto" href="#top">Back to Top</a>
-			</li>
-			<li>
-				<a class="scrollto" href="#skills">Services</a>
-			</li>
-			<li>
-				<a class="scrollto" href="#portfolio">Portfolio</a>
-			</li>
-			<li>
-				<a class="scrollto" href="#contact">Contact</a>
-			</li>
-		</ul>
+	<br>
+	<br>
+	{{!bottom navbar}}
+	<div class="navbar navbar-inverse navbar-fixed-bottom">
+		<div class="container-fluid">
+			<div class="navbar-header">
+		    	<h1 class="navbar-left" id="top-navbar-left">Jared Thomas</h1>
+		    </div>
+			<ul class="nav navbar-nav navbar-right" id="top-navbar-right">
+				<li>
+					<a class="scrollto" href="#top">Back to Top</a>
+				</li>
+				<li>
+					<a class="scrollto" href="#skills">Services</a>
+				</li>
+				<li>
+					<a class="scrollto" href="#portfolio">Portfolio</a>
+				</li>
+				<li>
+					<a class="scrollto" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
 	</div>
 </div>
