@@ -1,3 +1,3 @@
-var password = 'Billabong';
+var password = ;
 
 module.exports = password;
