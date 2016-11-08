@@ -26,6 +26,10 @@ html,body{
 	color: white;
 }
 
+.dropdown {
+    display: none;
+}
+
 #aboveImageText {
     color: red;
     font-family: 'Prociono', serif;
@@ -230,8 +234,17 @@ html,body{
         display: none;
     }
 
-    .dropdown, .navbar-header {
+    .navbar-header { 
        text-align: center;
+    }
+
+    .dropdown {
+        display: inline-block;
+        margin-left: 120px;
+    }
+
+    #dropdownMenu {
+        color: white;
     }
 
     #top-image {
