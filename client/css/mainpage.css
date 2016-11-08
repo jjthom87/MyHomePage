@@ -30,7 +30,7 @@ html,body{
 	color: white;
 }
 
-.dropdown {
+.dropdown, .dropup {
     display: none;
 }
 
@@ -242,7 +242,7 @@ html,body{
        text-align: center;
     }
 
-    .dropdown {
+    .dropdown, .dropup {
         display: inline-block;
         margin-left: 120px;
     }
