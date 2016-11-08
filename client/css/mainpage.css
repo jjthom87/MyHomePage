@@ -30,7 +30,11 @@ html,body{
 	color: white;
 }
 
-.dropdown, .dropup {
+.dropdown {
+    display: none;
+}
+
+.dropup {
     display: none;
 }
 
@@ -242,12 +246,21 @@ html,body{
        text-align: center;
     }
 
-    .dropdown, .dropup {
+    .dropdown {
+        display: inline-block;
+        margin-left: 120px;
+    }
+
+    .dropup {
         display: inline-block;
         margin-left: 120px;
     }
 
     #dropdownMenu {
+        color: white;
+    }
+
+    #dropupMenu {
         color: white;
     }
 
