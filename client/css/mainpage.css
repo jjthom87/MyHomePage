@@ -34,10 +34,6 @@ html,body{
     display: none;
 }
 
-.dropup {
-    display: none;
-}
-
 #aboveImageText {
     color: red;
     font-family: 'Prociono', serif;
@@ -242,10 +238,6 @@ html,body{
         display: none;
     }
 
-    #top-navbar-right-bottom {
-        display: none;
-    }
-
     .navbar-header { 
        text-align: center;
     }
@@ -255,16 +247,7 @@ html,body{
         margin-left: 120px;
     }
 
-    .dropup {
-        display: inline-block;
-        margin-left: 120px;
-    }
-
     #dropdownMenu {
-        color: white;
-    }
-
-    #dropupMenu {
         color: white;
     }
 
