@@ -19,6 +19,10 @@ html,body{
 	margin-right: 0px;
 }
 
+#top-navbar-right-bottom {
+    margin-right: 0px;
+}
+
 #top-navbar-left {
 	margin-top: 15px;
 	margin-left: 10px;
@@ -292,6 +296,7 @@ html,body{
 
     .feSkills {
         display: inline-block;
+        margin-left: 50px;
     }
 
     .jobtroll {
