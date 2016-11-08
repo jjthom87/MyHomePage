@@ -280,6 +280,10 @@ html,body{
         margin-top: 92px;
     }
 
+    .fe {
+        margin-left: 100px;
+    }
+
     .ehSkill {
         margin-left: -163px;
         margin-top: 233px;
@@ -296,7 +300,6 @@ html,body{
 
     .feSkills {
         display: inline-block;
-        text-align: center;
     }
 
     .jobtroll {
