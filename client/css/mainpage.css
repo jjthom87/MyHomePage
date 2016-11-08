@@ -26,6 +26,10 @@ html,body{
 	color: white;
 }
 
+.dropdown {
+    display: none;
+}
+
 #aboveImageText {
     color: red;
     font-family: 'Prociono', serif;
@@ -227,7 +231,11 @@ html,body{
 
 @media screen and (max-width: 320px){
     #top-nav {
-        text-align: center
+        display: none;
+    }
+
+    .dropdown {
+        align-items: right;
     }
 
     #top-image {
