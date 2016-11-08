@@ -296,7 +296,7 @@ html,body{
 
     .feSkills {
         display: inline-block;
-        margin-left: 50px;
+        text-align: center;
     }
 
     .jobtroll {
