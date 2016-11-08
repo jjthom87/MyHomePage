@@ -242,6 +242,10 @@ html,body{
         display: none;
     }
 
+    #top-navbar-right-bottom {
+        display: none;
+    }
+
     .navbar-header { 
        text-align: center;
     }
