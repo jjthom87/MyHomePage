@@ -26,10 +26,6 @@ html,body{
 	color: white;
 }
 
-.dropdown {
-    display: none;
-}
-
 #aboveImageText {
     color: red;
     font-family: 'Prociono', serif;
@@ -230,12 +226,12 @@ html,body{
 }
 
 @media screen and (max-width: 320px){
-    #top-nav {
+    #top-navbar-right {
         display: none;
     }
 
-    .dropdown {
-       display: inline-block;
+    .dropdown, .navbar-header {
+       text-align: center;
     }
 
     #top-image {
